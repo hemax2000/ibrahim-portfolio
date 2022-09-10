@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import Logo from './Logo'
 
@@ -14,7 +12,6 @@ const Home = () => {
 
   const nameArray = name.split("")
   const jobArray = job.split("")
-  const index = nameArray.length
   useEffect(() => {
         
     let timeoutId = setTimeout(() => {

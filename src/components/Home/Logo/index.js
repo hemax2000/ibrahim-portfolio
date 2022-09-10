@@ -6,7 +6,6 @@ import './index.scss'
 
 const Logo = () => {
   const bgRef = useRef()
-  const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
   useEffect(() => {
@@ -19,10 +18,6 @@ const Logo = () => {
         duration: 1,
         opacity: 1,
       })
-      .from(outlineLogoRef.current, {
-        duration: 23,
-        drawSVG: 1,
-      })
 
 
     gsap.fromTo(
@@ -32,15 +27,16 @@ const Logo = () => {
       },
       {
         opacity: 1,
-        delay: 4,
+        delay: 2,
         duration: 4,
+
       }
     )
 
   }, [])
   return (
     <div className="logo-container" ref={bgRef}>
-       <img src={headerImg} alt="Header Img"/>
+       <img ref={solidLogoRef} src={headerImg} alt="Header Img"/>
 
       
     </div>
