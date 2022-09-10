@@ -10,16 +10,16 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const name="Ibrahim"
-  const job= "web devoleper"
+  const job= "a fantastic web devoleper"
 
   const nameArray = name.split("")
   const jobArray = job.split("")
-
+  const index = nameArray.length
   useEffect(() => {
         
     let timeoutId = setTimeout(() => {
         setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 5000)
     
     return () => clearTimeout(timeoutId)
 }, [])

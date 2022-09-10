@@ -29,9 +29,19 @@
       transform: rotateZ(30deg) !important;
       z-index: 1;
     }
+
+    img{
+      animation: updown 3s linear infinite;    
+    }
   }
-  
-  .svg-container {
-    stroke: #ffd700;
-    stroke-width: 10;
-  }
+  @keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
