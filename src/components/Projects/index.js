@@ -1,55 +1,55 @@
-import gsap from 'gsap-trial';
-import ScrollTrigger from 'gsap-trial/ScrollTrigger';
-import { useEffect } from 'react';
+
+import { useEffect,useState } from 'react'
+import AnimatedLetters from '../AnimatedLetters'
+import ProjectCard from './ProjectCards'
+import projectInfo from '../../data/projectInfo.json'
 import './index.scss'
 
 const Projects = function () {
+const [letterClass, setLetterClass] = useState('text-animate')
+
+
+const text="hi this the project page"
+
+const textArray = text.split("")
+
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.utils.toArray(".panel").forEach((panel, i) => {
-            ScrollTrigger.create({
-                trigger: panel,
-                start: "top top",
-                pin: true,
-                pinSpacing: false
-            })
-        })
-
-
-        ScrollTrigger.create({
-            snap: 1 / 4 // snap whole page to the closest section!
-        })
-
-
-    }
-        , [])
-
-
+        
+        let timeoutId = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 5000)
+        
+        return () => clearTimeout(timeoutId)
+    }, [])
+    
+const projects = projectInfo.portfolio.map( record => {
+    return (
+        <ProjectCard 
+        title={record.title}
+        image={record.image}
+        url={record.url}
+        />
+    )
+})
     return (
         <>
-            <div className="description panel blue">
-                <div><h1>Layered pinning</h1>
-                    <p>Use pinning to layer panels on top of each other as you scroll.</p>
-                    <div className="scroll-down">Scroll down<div className="arrow"></div></div>
-                </div>
-            </div>
-
-
-            <section className="panel">
-                ONE
-            </section>
-            <section className="panel">
-                TWO
-            </section>
-            <section className="panel">
-                THREE
-            </section>
-            <section className="panel">
-                FOUR
-            </section>
-
+        <div className='text-container'>
+            <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={textArray}
+              idx={15}
+            />
+            {}
+            </h1>
+        </div>
+        <div className='projects-container'>
+            {projects}
+        </div>
         </>
+
+
+        
     )
 }
 export default Projects

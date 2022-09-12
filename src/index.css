@@ -8,9 +8,9 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
   color: #444;
   background-image:url('./assets/images/banner-bg.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
-  overflow: hidden;
+  background-color: black;
   display: block;
 }
 
