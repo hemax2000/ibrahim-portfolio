@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCards'
 import projectInfo from '../../data/projectInfo.json'
 import './index.scss'
 
+
 const Projects = function () {
 const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -31,6 +32,7 @@ const projects = projectInfo.portfolio.map( record => {
         />
     )
 })
+    
     return (
         <>
         <div className='text-container'>
