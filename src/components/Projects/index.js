@@ -40,7 +40,7 @@ const projects = projectInfo.portfolio.map( record => {
               strArray={textArray}
               idx={15}
             />
-            {}
+            
             </h1>
         </div>
         <div className='projects-container'>

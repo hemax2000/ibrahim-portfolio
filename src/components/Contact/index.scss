@@ -70,15 +70,20 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
   }
 }
 .logo-container1{
   z-index: 0;
-  width: 50%;
-  height: 100%;
+  width: fit-content;
+  height: auto;
   opacity: 0;
   position: absolute;
-  top: 180px;
+  top: 10%;
   left: 5%;
   bottom: 0;
   right: auto;

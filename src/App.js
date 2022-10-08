@@ -14,9 +14,8 @@ function App() {
         <Route path={"/contact"} element={<Contact />}/>
         <Route path={"/projects"} element={<Projects />}/>
       </Route>
-      
-      
     </Routes>
+
     </>
   );
 }
