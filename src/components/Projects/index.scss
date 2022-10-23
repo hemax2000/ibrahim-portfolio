@@ -1,9 +1,9 @@
-.text-container{
+.text-container {
   position: relative;
   width: 100%;
   top: 20%;
   text-align: center;
-  max-height: 90%;
+
 
   h1 {
     color: #fff;
@@ -42,17 +42,30 @@
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
     }
-  
-}
+
+  }
 
 }
-.projects-container{
-  position: relative;
+
+.projects-container {
+  background-image: url('../../assets/images/footer-bg.png');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  top: 20%;
   height: auto;
-  margin-top: 100px;
+
+  padding-bottom: 300px;
 }
+
+.emoji {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+  animation-delay: 4s;
+  }
