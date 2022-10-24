@@ -5,6 +5,7 @@
     margin-top: 100px;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap-reverse;
     opacity: 0;
     background-color: #151515;
     position: sticky;
@@ -34,3 +35,16 @@
 .rtl{
     direction: rtl;
 }
+@media screen and (max-width: 550px) {
+    .rtl{
+        direction: ltr;
+    }
+    .project-card{
+        .project-text{
+            width: 100%;
+        }
+        img{
+            margin-bottom: 20px;
+        }
+    }
+  }

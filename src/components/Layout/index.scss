@@ -127,8 +127,7 @@
 
 @media screen and (max-width: 1200px) {
   .page {
-    position: initial;
-    height: 92.5vh;
+    position: relative;
   }
 
   .container {
@@ -154,4 +153,10 @@
 
   
 
+}
+
+@media screen and (max-width: 650px) {
+  .page{
+    height: max-content;
+  }
 }
