@@ -19,12 +19,12 @@ const Projects = function () {
     const text1 = "Scroll down and enjoy ."
     const textArray = text.split("")
     const text1Array = text1.split("")
-    
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         let timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover')
-            document.getElementsByClassName('emoji').className="emoji-hover"
+            document.getElementsByClassName('emoji').className = "emoji-hover"
         }, 5000)
         return () => clearTimeout(timeoutId)
     }, [])
@@ -64,7 +64,7 @@ const Projects = function () {
                                 idx={20}
                             />
                             <span className='emoji'>💖</span>
-                           
+
                         </h1>
 
 
