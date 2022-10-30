@@ -16,7 +16,9 @@
       max-width: 650px;
 
     }
+    animation: fade-in 4s 2s forwards;
   }
+  
   @keyframes updown {
     0% {
         transform: translateY(-20px);

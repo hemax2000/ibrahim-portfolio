@@ -30,21 +30,26 @@
         display: inline-block;
         width: 30%;
         height: auto;
+
         img {
             position: relative;
             display: block;
             margin: 10px;
             width: 90%;
             height: 80%;
-          }
+        }
     }
-    
+
 
 
 }
 
 .rtl {
     direction: rtl;
+}
+
+.show {
+    animation: fade-in 2s 0s forwards;
 }
 
 @media screen and (max-width: 1000px) {
@@ -56,14 +61,16 @@
         .project-text {
             width: 100%;
         }
-        a{
+
+        a {
             width: 60%;
             margin: auto;
-        img {
-            min-height: 100px;
-            min-width: 150px;
-            margin-bottom: 20px;
+
+            img {
+                min-height: 100px;
+                min-width: 150px;
+                margin-bottom: 20px;
+            }
         }
-    }
     }
 }

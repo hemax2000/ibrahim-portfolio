@@ -95,11 +95,16 @@
     img{
       width:80%;
       height: 80%;
+      
       animation: updown 3s linear infinite;    
     }
+    animation: fade-in 3s 2s forwards;
 }
 
-
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 @keyframes updown {
   0% {

@@ -1,40 +1,16 @@
 import './index.scss'
-import { gsap } from 'gsap-trial'
-
-import ScrollTrigger from 'gsap-trial/ScrollTrigger'
-import { useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 
 
 const ProjectCard = function ({ title, image, url, idx }) {
     let cardImage = require("../../../assets/images/"+image)
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
-        let cards = gsap.utils.toArray(".project-card")
-
-        cards.forEach(card => {
-            gsap.to(card, {
-                scrollTrigger: {
-                    trigger: card,
-                    toggleActions: "play none none reverse",
-                    start: 'top 86%',
-                    end: 'bottom 86%'
-                },
-
-
-                opacity: 1,
-                duration: 2,
-            })
-
-        })
-
-        
-
-    }, [])
+    const { ref: myRef, inView: myElementIsVisible } = useInView();
     if (idx%2 === 0) {
         return (
 
-            <div className='project-card'>
+            <div ref={myRef} className={`project-card ${ myElementIsVisible ? 'show' : '' }`}>
 
                 <div className='project-text'>
                 {title}
@@ -46,8 +22,7 @@ const ProjectCard = function ({ title, image, url, idx }) {
     else {
         return (
 
-            <div className='project-card rtl'>
-
+            <div ref={myRef} className={`project-card rtl ${ myElementIsVisible ? 'show' : '' }`}>
                 <div className='project-text'>
                     {title}
                 </div>

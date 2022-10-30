@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import gsap from 'gsap-trial'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -18,17 +17,6 @@ const Contact = () => {
     }, 5000)
     
     return () => clearTimeout(timeoutId)
-}, [])
-  useEffect(() => {
-
-
-
-  gsap.timeline()
-    .to('.logo-container1', {
-      duration: 4,
-      delay:2,
-      opacity: 1,
-    })
 }, [])
   const sendEmail = (e) => {
     e.preventDefault()
