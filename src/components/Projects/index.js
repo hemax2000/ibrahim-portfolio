@@ -2,8 +2,7 @@
 import { useEffect, useState } from 'react'
 import Sidebar from '../Sidebar/index'
 import AnimatedLetters from '../AnimatedLetters'
-import { gsap } from 'gsap-trial'
-import ScrollTrigger from 'gsap-trial/ScrollTrigger'
+
 import ProjectCard from './ProjectCards'
 import projectInfo from '../../data/projectInfo.json'
 import Loader from 'react-loaders'
@@ -21,7 +20,6 @@ const Projects = function () {
     const text1Array = text1.split("")
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
         let timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover')
             document.getElementsByClassName('emoji').className = "emoji-hover"
