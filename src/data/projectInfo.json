@@ -1,29 +1,32 @@
+
 {
+    
     "portfolio": [
         {
-            "image": "/portfolio/1/one.png",
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique finibus velit, sed interdum turpis maximus vel. Nullam consectetur molestie consequat. Mauris tincidunt leo neque, ac aliquet ligula porta eget. Sed et ipsum ut sem pharetra tempor. Vestibulum blandit aliquam nisl ac malesuada. Ut feugiat nisl vitae neque eleifend tincidunt. Donec finibus diam ut tristique vestibulum. Donec sagittis mollis velit, ut varius magna blandit nec. Praesent aliquet elementum purus, ut viverra nisi venenatis quis. Nunc est risus, iaculis ut fringilla sit amet, suscipit quis turpis. Nulla eleifend congue nisi, id aliquet nunc lobortis sagittis. Maecenas neque velit, placerat ac suscipit eget, porta at tellus.",
-            "url": "http://google.com"
+            "image": "caffena.png",
+            "title": "Caffena was one of the first projects I worked on, and I created it using simple HTML, CSS, and Js, as well as some external libraries like bootstrab and animation. It was my start to learning basic web development in general and front-end in Specifec.",
+            "url": "https://github.com/hemax2000/Caffena"
         },
         {
-            "image": "/portfolio/1/one.png",
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique finibus velit, sed interdum turpis maximus vel. Nullam consectetur molestie consequat. Mauris tincidunt leo neque, ac aliquet ligula porta eget. Sed et ipsum ut sem pharetra tempor. Vestibulum blandit aliquam nisl ac malesuada. Ut feugiat nisl vitae neque eleifend tincidunt. Donec finibus diam ut tristique vestibulum. Donec sagittis mollis velit, ut varius magna blandit nec. Praesent aliquet elementum purus, ut viverra nisi venenatis quis. Nunc est risus, iaculis ut fringilla sit amet, suscipit quis turpis. Nulla eleifend congue nisi, id aliquet nunc lobortis sagittis. Maecenas neque velit, placerat ac suscipit eget, porta at tellus.",
-            "url": "http://google.com"
+            "image": "ratedtv.png",
+            "title": "RatedTV was a project for a course I took in university. It helps the user find movies based on genre and see their descriptions, banners, ratings on IMDB, and comments from other users on any movie. I mainly worked on the back-end and learned a lot about the back-end and PHP. The back-end was fascinating, and I really wanted to explore it further.",
+            "url": "https://github.com/hemax2000/RatedTV"
         },
         {
-            "image": "/portfolio/1/one.png",
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique finibus velit, sed interdum turpis maximus vel. Nullam consectetur molestie consequat. Mauris tincidunt leo neque, ac aliquet ligula porta eget. Sed et ipsum ut sem pharetra tempor. Vestibulum blandit aliquam nisl ac malesuada. Ut feugiat nisl vitae neque eleifend tincidunt. Donec finibus diam ut tristique vestibulum. Donec sagittis mollis velit, ut varius magna blandit nec. Praesent aliquet elementum purus, ut viverra nisi venenatis quis. Nunc est risus, iaculis ut fringilla sit amet, suscipit quis turpis. Nulla eleifend congue nisi, id aliquet nunc lobortis sagittis. Maecenas neque velit, placerat ac suscipit eget, porta at tellus.",
-            "url": "http://google.com"
+            "image": "BF.png",
+            "title": "Business Finder is a website for businessmen to show their ideas and for investors to find potential businesses to invest in. We worked on it using Trello for efficient project management and it was very convenient since it was a group project and I have tried working with groups before, so I can say with confidence that having a tool like Trello could make all the difference.",
+            "url": "https://github.com/hemax2000/Business-Finder"
         },
         {
-            "image": "/portfolio/1/one.png",
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique finibus velit, sed interdum turpis maximus vel. Nullam consectetur molestie consequat. Mauris tincidunt leo neque, ac aliquet ligula porta eget. Sed et ipsum ut sem pharetra tempor. Vestibulum blandit aliquam nisl ac malesuada. Ut feugiat nisl vitae neque eleifend tincidunt. Donec finibus diam ut tristique vestibulum. Donec sagittis mollis velit, ut varius magna blandit nec. Praesent aliquet elementum purus, ut viverra nisi venenatis quis. Nunc est risus, iaculis ut fringilla sit amet, suscipit quis turpis. Nulla eleifend congue nisi, id aliquet nunc lobortis sagittis. Maecenas neque velit, placerat ac suscipit eget, porta at tellus.",
-            "url": "http://google.com"
+            "image": "quillz.png",
+            "title": "Quillz is website that helps the user to make a quiz by adding engagement activities, that can help for teaching. All this can be done by allowing the user to create a quiz in game-based form or non-game based and allowing participant to engage with the user’s quiz. This project gives me more insight into back-end development. We developed it using Laravel, which, in my opinion, is one of the best languages for back-end development. The learning was somewhat easy, especially because I have some experience in PHP and the design starcture used is beautiful. I will undoubtedly use it in future projects.",
+            "url": "https://github.com/hemax2000/Quillz"
         },
         {
-            "image": "/portfolio/1/one.png",
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique finibus velit, sed interdum turpis maximus vel. Nullam consectetur molestie consequat. Mauris tincidunt leo neque, ac aliquet ligula porta eget. Sed et ipsum ut sem pharetra tempor. Vestibulum blandit aliquam nisl ac malesuada. Ut feugiat nisl vitae neque eleifend tincidunt. Donec finibus diam ut tristique vestibulum. Donec sagittis mollis velit, ut varius magna blandit nec. Praesent aliquet elementum purus, ut viverra nisi venenatis quis. Nunc est risus, iaculis ut fringilla sit amet, suscipit quis turpis. Nulla eleifend congue nisi, id aliquet nunc lobortis sagittis. Maecenas neque velit, placerat ac suscipit eget, porta at tellus.",
-            "url": "http://google.com"
+            "image": "bookTracker.png",
+            "title": "BookTracker was a project for a course I took about advance backend development. We developed it using Python and Fast-API framework. This project taught me about some non-functional but critical aspects of project success, such as performance, security, and some DevOps tools like Docker and DevContainer. The project was a rest api about a tracker for books you are currently reading. and it also included user management in a separate backend.",
+            "url": "https://github.com/hemax2000/python-fastapi"
         }
     ]
+    
 }

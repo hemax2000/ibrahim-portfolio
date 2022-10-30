@@ -1,5 +1,5 @@
 .project-card {
-    width: 60%;
+    width: 70%;
     min-height: 200px;
     border-radius: 20px;
     margin-top: 100px;
@@ -17,39 +17,53 @@
         inset 0 0 1.3rem #bc13fe;
 
     .project-text {
-        width: 80%;
+        width: 70%;
+        font-family: sans-serif;
         position: relative;
-        margin: 0;
-        font-size: larger;
+        font-size: 18px;
         color: rgb(217, 217, 217);
         text-align: center;
     }
 
     a {
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    img{
-        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        img {
+            position: relative;
+            display: block;
+            margin: 10px;
+            width: 90%;
+            height: 80%;
+          }
     }
     
 
+
 }
 
-.rtl{
+.rtl {
     direction: rtl;
 }
-@media screen and (max-width: 550px) {
-    .rtl{
+
+@media screen and (max-width: 1000px) {
+    .rtl {
         direction: ltr;
     }
-    .project-card{
-        .project-text{
+
+    .project-card {
+        .project-text {
             width: 100%;
         }
-        img{
+        a{
+            width: 60%;
+            margin: auto;
+        img {
+            min-height: 100px;
+            min-width: 150px;
             margin-bottom: 20px;
         }
     }
-  }
+    }
+}
