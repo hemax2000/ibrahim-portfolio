@@ -8,6 +8,8 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [isDisabled, setIsDisabled] = useState(false);
+
   const form = useRef()
 
   useEffect(() => {
@@ -20,9 +22,9 @@ const Contact = () => {
 }, [])
   const sendEmail = (e) => {
     e.preventDefault()
-
+    setIsDisabled(true);
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm(process.env.REACT_APP_EMAIL_SERVICEID,process.env.REACT_APP_EMAIL_TAMPLATEID , form.current,process.env.REACT_APP_EMAIL_PUBLICID)
       .then(
         () => {
           alert('Message successfully sent!')
@@ -31,7 +33,9 @@ const Contact = () => {
         () => {
           alert('Failed to send the message, please try again')
         }
+        
       )
+      
   }
 
   return (
@@ -82,9 +86,17 @@ const Contact = () => {
                     required
                   ></textarea>
                 </li>
+                { !isDisabled ? ( 
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input disabled={isDisabled} type="submit" className="flat-button" value="SEND" />
                 </li>
+                ) : 
+                (
+                <li>
+                  <input disabled={!isDisabled} type="submit" className="flat-button" value="Sending..." />
+                </li> 
+                )}
+               
               </ul>
             </form>
           </div>
