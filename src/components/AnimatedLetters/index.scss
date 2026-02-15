@@ -1,22 +1,23 @@
 .text-animate {
-    opacity: 0;
-    animation: bounceIn;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate-hover {
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: var(--color-accent);
   }
-  
-  .text-animate-hover {
-    animation-fill-mode: both;
-  
-    &:hover {
-      animation: rubberBand 1s;
-      color: #17D3AA;
-    }
+}
+
+@for $i from 1 through 100 {
+  .text-animate._#{$i} {
+    animation-delay: #{calc($i / 10)}s;
   }
-  
-  @for $i from 1 through 100 {
-    .text-animate._#{$i} {
-      animation-delay: #{calc($i / 10)}s;
-    }
-  }
+}

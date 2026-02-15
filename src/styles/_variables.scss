@@ -1,0 +1,39 @@
+:root {
+  // Primary colors
+  --color-primary: #7B2FFF;
+  --color-accent: #C77DFF;
+  --color-accent-pink: #E040FB;
+
+  // Backgrounds
+  --color-bg-deep: #0a0a0f;
+  --color-bg-surface: #12121a;
+  --color-bg-glass: rgba(255, 255, 255, 0.04);
+
+  // Text
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a0b0;
+  --color-text-muted: #6b6b80;
+
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, #7B2FFF, #C77DFF);
+  --gradient-accent: linear-gradient(135deg, #7B2FFF, #E040FB);
+
+  // Glass tokens
+  --glass-blur: 20px;
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.04);
+
+  // Typography
+  --font-heading: 'Coolvetica', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-decorative: 'La Belle Aurore', cursive;
+
+  // Spacing
+  --nav-height: 70px;
+  --section-padding: 100px;
+
+  // Transitions
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
